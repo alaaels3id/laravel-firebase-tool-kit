@@ -1,0 +1,36 @@
+{
+    "name": "alaaelsaid/laravel-firebase-tool-kit",
+    "description": "This package for integration with firebase",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alaaelsaid\\LaravelFirebaseToolKit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alaa Elsaid",
+            "email": "alaa4cat@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Alaaelsaid\\LaravelFirebaseToolKit\\Providers\\FirebaseServiceProvider"
+            ],
+            "aliases": {
+                "Malath": "Alaaelsaid\\LaravelMalathSms\\Facade\\Malath"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "firebase/php-jwt": "^6.10",
+        "google/apiclient": "^2.17",
+        "google/cloud-binary-authorization": "^1.0"
+    }
+}
